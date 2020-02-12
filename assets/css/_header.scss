@@ -1,0 +1,143 @@
+
+// HEADER_INDEX
+
+.header_index {
+	width: 100%;
+	background-image: url(../img/topo.svg);
+	background-size: cover;
+	background-position: top center;
+	padding-bottom: 200px;
+}
+
+.marca_index {
+	display: block;
+	margin: 0 auto;
+	width: 350px;
+	padding-top: 300px;
+	
+	@media (max-width: $tablet) {
+		width: 350px;
+	}
+
+	@media (max-width: $celular) {
+		width: 250px;
+	}
+}
+
+.botoes_index {
+	
+	text-align: center;
+
+	a { 	
+		background-color: $bg;
+		display: inline-block;
+		color: $verde;
+		box-shadow: 0 2px 0 0 $verde;
+		padding: 65px 0 8px 0;
+		margin: 30px 20px 30px 20px;
+		font-size: 1.5em;
+		font-weight: normal;
+		img{
+			width: 30px;
+			padding-right: 15px;
+		}
+		&:hover {
+			color: $marrom;
+			box-shadow: 0 8px 0 0 $marrom;
+		}
+		@media (max-width: $celular) {
+			width: 250px;
+			padding: 35px 0 8px 0;
+			margin: 15px 0 15px 0px;
+			box-shadow: none;
+			border-bottom: 2px solid $verde;
+			&:hover {
+				color: none;
+				box-shadow:  none;
+			}
+		}
+	}
+}
+
+
+// HEADER_CONTEUDO
+
+.header_conteudo {
+	width: 100%;
+	position: relative;
+	background-color: $verde_claro;
+	padding: 65px 0 5px 0;
+
+
+	&:before {
+		content: "";
+		position: absolute;
+		top: 0;
+		left: 0;
+		width: 100%;
+		height: 50px;
+		background-image: url(../img/topoconteudo.svg);
+		background-position: center top;
+		background-size: cover;
+		display: block;
+	}
+
+	.nome_curso {
+		float: left;
+
+		.marcamenor {
+			width: 80px;
+			padding-right: 25px;
+			display: inline-block;
+			@media (max-width: $tablet) {
+				width: 96px;
+				padding-left: 15px;
+				display: inline-block;
+			}
+			@media (max-width: $celular) {
+				display: none;
+			}
+		}
+
+		p {
+			display: inline-block;
+			vertical-align: bottom;
+			margin: 0;
+			font-weight: bold;
+			font-size: 1.2em;
+			color: $marrom;
+			width: 60%;
+			padding-bottom: 1px;
+			@media (max-width: $celular) {
+				padding-left: 15px;
+				width: 65%;
+			}
+		}
+	}
+
+	.menu {
+		float: right;
+		width: 40px;
+		// clear: right;
+		margin-top: -32px;
+		@media (max-width: &tablet) {
+			padding-right: 7px;
+		}
+		@media (max-width: $celular){
+			display: block;
+			float: none;
+			padding: 15px 0 15px 15px;
+			width: 60px;
+			}
+	}
+
+}
+
+
+
+
+
+
+
+
+

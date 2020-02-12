@@ -1,0 +1,102 @@
+// CORES
+$verde: #738737;
+$texto: #352E25;
+$bg: #f6f7f4;
+$verde_claro: #DBDBCC;
+$marrom: #352E25;
+
+// FONTES
+$fonte: 'Fira Sans',sans-serif;
+
+// TAMANHO
+$container: 1120px;
+$tablet: 700px;
+$celular: 425px;
+
+// BODY E PADROES DE CSS
+body {
+	font-size: 17px;
+	font-family: $fonte;
+	line-height: 1.6;
+	background-color: $bg;
+}
+
+//LINKS
+a { 
+	color: $verde;
+	cursor: pointer;
+	
+	&:link, &:hover, &:visited, &:active {
+		text-decoration: none;
+	}
+
+	&:hover {
+		color: lighten($verde,30%);
+
+	}
+ }
+
+// TITULOS
+
+h1, h2, h3, h4 {
+	color: $verde;
+	margin: 0;
+	padding: 35px 0 10px 0;
+}
+
+h1 {
+	font-size: 1.8em;
+	padding: 0 0 10px 0;
+
+}
+
+h2 {
+	font-size: 1.3em;
+}
+
+//p
+
+p {
+	margin: 0;
+	padding-bottom: 20px;
+}
+
+//CONTAINER
+.container {
+	padding: 10px;
+	margin: 0 auto;
+	width: $container;
+	@media (max-width: $container) {
+		width: 100%;
+	}
+	@media (max-width: $tablet) {
+		width: 100%;
+	}
+	@media (max-width: $celular) {
+		width: 100%;
+	}
+}
+
+article {
+	padding: 60px 0;
+	width: 65%;
+	@media (max-width: $tablet) {
+		width: 100%;
+		padding: 40px 15px;
+	}
+	@media (max-width: $celular) {
+		width: 100%;
+		padding: 40px 15px;
+	}
+}
+
+.clearfix {
+	
+	&:after {
+  content: "";
+  clear: both;
+  display: table;
+  }
+}
+
+

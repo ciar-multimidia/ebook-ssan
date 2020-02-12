@@ -1,0 +1,205 @@
+ //ARTICLE
+
+//Autores
+
+.autor {
+	border: 1px solid $verde_claro;
+	padding: 25px 25px 10px 25px;
+	float: right;
+	margin-top: 90px;
+	@media (max-width: $tablet) {
+		width: 100%;
+		float: none;
+		display: block;
+		margin-top: 20px;
+
+	}
+	@media (max-width: $celular) {
+		width: 100%;
+		float: none;
+		margin-top: 20px;
+	}
+}
+
+blockquote {
+	font-size: 0.9em;
+	margin: 0;
+	padding: 0 40px 20px 40px;
+}
+
+img {
+	width: 100%;
+}
+
+// TABELA 
+
+.tabela {
+	padding: 30px 0;
+	width: 100%;
+	th {
+		background-color: $verde;
+		color: $bg;
+		font-size: 1.1em;
+		font-weight: normal;
+		padding: 10px;
+		text-align: left;
+	}
+	td {
+		background-color: $verde-claro;
+		padding: 10px;
+	}
+}
+
+
+// PAGINACAO
+
+.pagina {
+	font-size: 1em;
+	color: #9c9c9c;
+	border-bottom: 1px solid #d6d6d6;
+	width: 100%;
+	display: block;
+	margin: 0 0 30px 0;
+	text-align: right;
+}
+
+
+//Sumário
+
+.sumario {
+	padding: 80px 0 80px 0;
+	@media (max-width: $tablet) {
+		padding: 30px 15px 30px 15px;
+	}
+	h1 {
+		color: $marrom;
+		display: inline-block;
+	}
+
+	.iniciarebook {
+		float: right;
+		font-size: 1.2em;
+		font-weight: bold;
+		display: inline-block;
+		border-bottom: none;
+		&:hover {
+			border-bottom: none;
+		}
+		@media (max-width: $celular) {
+			display: block;
+			float: none;
+			padding-top: 20px;
+		}
+	}
+
+	a {				
+		display: block;
+		color: inherit;
+		border-bottom: 1px solid lighten($marrom, 55%);
+		span {
+		padding: 40px 0 20px 0; 
+		font-weight: normal;
+		display: inline-block;
+		&:nth-child(2){
+			float: right;
+			}
+		}
+		&:hover {
+			color: $verde;
+			border-bottom: 1px solid $marrom;
+		}
+		@media (max-width: $tablet) {
+			span {
+		padding: 40px 0 20px 0; 
+		font-weight: normal;
+		display: inline-block;
+		&:nth-child(2){
+			display: none;
+			}
+		}
+		}
+	}
+}
+
+//Ficha técnica
+
+#linha {
+	border-top: 2px solid $verde;
+}
+
+.ficha {
+
+	width: 50%;
+	
+	h1, h2, h3, h4 {
+		color: $marrom;
+		padding: 20px 0 0 0;
+
+	}
+
+	p {
+		color: $marrom;
+		padding-bottom: 0;
+	}
+
+	.ciarufg {
+		margin: 50px 0;
+		width: 240px;
+	}
+
+	@media (max-width: $tablet) {
+		width: 100%;
+		padding-left: 15px;
+		padding-right: 15px;
+	}
+
+	@media (max-width: $celular) {
+		width: 100%;
+	}
+}
+
+.isbn {
+	border: 1px solid $marrom;
+	margin-top: 40px;
+	padding: 30px;
+	p {
+		font-size: 0.9em;
+	}
+	.dado {
+		width: 80px;
+		float: left;
+	}
+	.info {
+		float: right;
+		width: calc(100% - 80px)
+	}
+}
+
+#link {
+	width: 37%;
+	font-weight: normal;
+	display: block;
+	margin-top: 50px;
+	background-color: $verde;
+	color: $bg;
+	font-size: 1.2em;
+	padding: 15px;
+	&:hover {
+		background-color: $marrom;
+	}
+	@media (max-width: $tablet) {
+		width: 32%;
+	}
+	@media (max-width: $celular) {
+		width: 100%;
+		text-align: center;
+	}
+
+}
+
+
+
+
+
+
+

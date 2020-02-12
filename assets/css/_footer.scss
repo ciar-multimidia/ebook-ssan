@@ -1,0 +1,72 @@
+//FOOTER_INDEX
+
+footer {
+	background-color: $verde_claro;
+	color: ($texto, 30%);
+	a {
+		color: $marrom;
+		&:hover {
+			color: $marrom;
+		}
+	}
+}
+
+.footer_index {
+	text-align: center;
+	font-size: 0.9em;
+	padding: 30px;
+	width: 50%;
+	margin: 0 auto;
+	@media (max-width: $tablet) {
+		width: 80%;
+	}
+	@media (max-width: $celular) {
+		width: 100%;
+		padding: 30px 15px 15px 15px;
+	}
+}
+
+//FOOTER_CONTEUDO
+
+.footer_conteudo {
+	padding: 20px 0 50px 0;
+	margin: 0;
+	p {
+		color: $marrom;
+		font-size: 1.2em;
+		font-weight: bold;
+		padding: 0;
+	}
+	@media (max-width: $tablet) {
+		padding-left: 15px;
+		padding-right: 15px;
+	}
+	@media (max-width: $celular) {
+		padding-left: 15px;
+		padding-right: 15px;
+	}
+}
+
+.esquerda {
+	float: left;
+	margin: 0;
+}
+
+.direita {
+	float: right;
+	margin: 0;
+	a {
+		font-size: 1.2em;
+		display: inline-block;
+		color: $marrom;
+		&.voltar {
+			transform: scale(-1);
+			position: relative;
+			top: -2px;
+			left: -20px;
+		}
+	}
+}
+
+
+
