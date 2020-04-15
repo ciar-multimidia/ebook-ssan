@@ -197,6 +197,62 @@ img {
 
 }
 
+//NOTA DE RODAPÉ
+
+main {
+	input[type="checkbox"]{
+    position: absolute;
+    left: -10000px;
+    visibility: hidden;
+	}
+
+	label{
+    // width: 4px;
+    // height: 4px;
+    font-size: 0.7em;
+    // vertical-align: baseline;
+    background-color: #C8D06A;
+    font-weight: bold;
+    color: black;
+    padding: 3px 6px;
+    margin: 0 2px 0 2px;
+    user-select: none;
+	}
+
+	.nota-rodape {
+    // border-top: 4px solid $amarelo;
+    display: none;
+    position: absolute;
+    float: right;
+    font-size: 1em;
+    line-height: 1.4em;
+    right: 0;
+    width: 266px;
+    margin-top: -1em;
+    margin-right: 15px;
+    color: #000;
+    background-color: #C8D06A;
+    z-index: 2;
+    padding: 25px;
+	    a {
+	    text-decoration: none;
+	    color: #4f00cc;
+	    font-weight: normal;
+	    text-decoration: underline;
+		}
+	}
+		
+	input[type="checkbox"]:checked + label{
+    background-color: $verde;
+	}	
+
+	input[type="checkbox"]:checked + label + .nota-rodape{
+    display: block;
+	}
+}
+
+
+
 
 
 

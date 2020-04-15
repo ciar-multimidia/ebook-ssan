@@ -21,6 +21,10 @@ body {
 	background-color: $bg;
 }
 
+main {
+	position: relative;
+}
+
 //LINKS
 a { 
 	color: $verde;
