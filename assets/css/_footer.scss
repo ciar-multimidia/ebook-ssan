@@ -15,8 +15,9 @@ footer {
 	text-align: center;
 	font-size: 0.9em;
 	padding: 30px;
-	width: 50%;
 	margin: 0 auto;
+	width: 800px;
+
 	@media (max-width: $tablet) {
 		width: 80%;
 	}
@@ -62,7 +63,7 @@ footer {
 		&.voltar {
 			transform: scale(-1);
 			position: relative;
-			top: -2px;
+			top: 1px;
 			left: -20px;
 		}
 	}

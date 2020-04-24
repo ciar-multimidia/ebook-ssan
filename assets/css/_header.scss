@@ -6,23 +6,68 @@
 	background-image: url(../img/topo.svg);
 	background-size: cover;
 	background-position: top center;
-	padding-bottom: 200px;
+	padding-bottom: 80px;
 }
 
-.marca_index {
+.tituloindex {
 	display: block;
 	margin: 0 auto;
-	width: 350px;
-	padding-top: 300px;
-	
+	margin-top: 210px;
+
 	@media (max-width: $tablet) {
-		width: 350px;
+		display: block;
+		margin-top: 150px;
 	}
 
 	@media (max-width: $celular) {
-		width: 250px;
+		display: block;
 	}
+
+
+	.marca_index {
+	width: 130px;
+	margin: 0 auto;
+	display: block;
+
+
+	@media (max-width: $celular) {
+		margin-top: 150px;
+	}
+	
 }
+
+	#titulos {
+		display: block;
+		text-align: center;
+
+		@media (max-width: $tablet) {
+		padding: 40px 15px 0 15px;
+		}
+		
+		h1 {
+			font-size: 2.2em;
+			padding-bottom: 0;
+
+			@media (max-width: $celular) {
+				font-size: 2em;
+				line-height: 1.2em;
+				padding-bottom: 0.2em;
+			}
+		}
+
+		h2 {
+			font-size: 1.6em;
+			padding-top: 0;
+
+			@media (max-width: $celular) {
+				font-size: 1em;
+			}
+		}
+	}
+		
+	
+}
+
 
 .botoes_index {
 	
@@ -33,10 +78,10 @@
 		display: inline-block;
 		color: $verde;
 		box-shadow: 0 2px 0 0 $verde;
-		padding: 65px 0 8px 0;
-		margin: 30px 20px 30px 20px;
-		font-size: 1.5em;
-		font-weight: normal;
+		padding: 50px 0 8px 0;
+		margin: 10px 20px 30px 20px;
+		font-size: 1.2em;
+		font-weight: bold;
 		img{
 			width: 30px;
 			padding-right: 15px;
@@ -45,10 +90,23 @@
 			color: $marrom;
 			box-shadow: 0 8px 0 0 $marrom;
 		}
+
+		@media (max-width: $tablet) {
+			width: 250px;
+			padding: 30px 0 8px 0;
+			margin: 0;
+			box-shadow: none;
+			border-bottom: 2px solid $verde;
+			&:hover {
+				color: none;
+				box-shadow:  none;
+			}
+		}
+
 		@media (max-width: $celular) {
 			width: 250px;
-			padding: 35px 0 8px 0;
-			margin: 15px 0 15px 0px;
+			padding: 15px 0 20px 0;
+			margin: 0;
 			box-shadow: none;
 			border-bottom: 2px solid $verde;
 			&:hover {
@@ -106,7 +164,7 @@
 			font-weight: bold;
 			font-size: 1.2em;
 			color: $marrom;
-			width: 60%;
+			//width: 60%;
 			padding-bottom: 1px;
 			@media (max-width: $celular) {
 				padding-left: 15px;
@@ -119,7 +177,7 @@
 		float: right;
 		width: 40px;
 		// clear: right;
-		margin-top: -32px;
+		margin-top: 53px;
 		@media (max-width: &tablet) {
 			padding-right: 7px;
 		}

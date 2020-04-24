@@ -407,7 +407,7 @@ h1, h2, h3, h4 {
 
 h1 {
   font-size: 1.8em;
-  padding: 0 0 10px 0;
+  padding: 0 0 20px 0;
 }
 
 h2 {
@@ -468,23 +468,62 @@ article {
   background-image: url(../img/topo.svg);
   background-size: cover;
   background-position: top center;
-  padding-bottom: 200px;
+  padding-bottom: 80px;
 }
 
-.marca_index {
+.tituloindex {
   display: block;
   margin: 0 auto;
-  width: 350px;
-  padding-top: 300px;
+  margin-top: 210px;
 }
 @media (max-width: 700px) {
-  .marca_index {
-    width: 350px;
+  .tituloindex {
+    display: block;
+    margin-top: 150px;
   }
 }
 @media (max-width: 425px) {
-  .marca_index {
-    width: 250px;
+  .tituloindex {
+    display: block;
+  }
+}
+.tituloindex .marca_index {
+  width: 130px;
+  margin: 0 auto;
+  display: block;
+}
+@media (max-width: 425px) {
+  .tituloindex .marca_index {
+    margin-top: 150px;
+  }
+}
+.tituloindex #titulos {
+  display: block;
+  text-align: center;
+}
+@media (max-width: 700px) {
+  .tituloindex #titulos {
+    padding: 40px 15px 0 15px;
+  }
+}
+.tituloindex #titulos h1 {
+  font-size: 2.2em;
+  padding-bottom: 0;
+}
+@media (max-width: 425px) {
+  .tituloindex #titulos h1 {
+    font-size: 2em;
+    line-height: 1.2em;
+    padding-bottom: 0.2em;
+  }
+}
+.tituloindex #titulos h2 {
+  font-size: 1.6em;
+  padding-top: 0;
+}
+@media (max-width: 425px) {
+  .tituloindex #titulos h2 {
+    font-size: 1em;
   }
 }
 
@@ -496,10 +535,10 @@ article {
   display: inline-block;
   color: #738737;
   box-shadow: 0 2px 0 0 #738737;
-  padding: 65px 0 8px 0;
-  margin: 30px 20px 30px 20px;
-  font-size: 1.5em;
-  font-weight: normal;
+  padding: 50px 0 8px 0;
+  margin: 10px 20px 30px 20px;
+  font-size: 1.2em;
+  font-weight: bold;
 }
 .botoes_index a img {
   width: 30px;
@@ -509,11 +548,24 @@ article {
   color: #352E25;
   box-shadow: 0 8px 0 0 #352E25;
 }
+@media (max-width: 700px) {
+  .botoes_index a {
+    width: 250px;
+    padding: 30px 0 8px 0;
+    margin: 0;
+    box-shadow: none;
+    border-bottom: 2px solid #738737;
+  }
+  .botoes_index a:hover {
+    color: none;
+    box-shadow: none;
+  }
+}
 @media (max-width: 425px) {
   .botoes_index a {
     width: 250px;
-    padding: 35px 0 8px 0;
-    margin: 15px 0 15px 0px;
+    padding: 15px 0 20px 0;
+    margin: 0;
     box-shadow: none;
     border-bottom: 2px solid #738737;
   }
@@ -568,7 +620,6 @@ article {
   font-weight: bold;
   font-size: 1.2em;
   color: #352E25;
-  width: 60%;
   padding-bottom: 1px;
 }
 @media (max-width: 425px) {
@@ -580,7 +631,7 @@ article {
 .header_conteudo .menu {
   float: right;
   width: 40px;
-  margin-top: -32px;
+  margin-top: 53px;
 }
 @media (max-width: .header_conteudo .menu tablet) {
   .header_conteudo .menu {
@@ -597,10 +648,16 @@ article {
 }
 
 .autor {
-  border: 1px solid #DBDBCC;
-  padding: 25px 25px 10px 25px;
-  float: right;
-  margin-top: 90px;
+  border-top: 5px solid #DBDBCC;
+  border-bottom: 5px solid #DBDBCC;
+  padding: 25px 0;
+  font-size: 0.8em;
+  line-height: 1.7em;
+  margin-bottom: 25px;
+}
+.autor p {
+  width: 100%;
+  padding-bottom: 0;
 }
 @media (max-width: 700px) {
   .autor {
@@ -743,6 +800,10 @@ img {
     width: 100%;
   }
 }
+.ficha .ssan {
+  width: 300px;
+  padding-bottom: 20px;
+}
 
 .isbn {
   border: 1px solid #352E25;
@@ -843,8 +904,8 @@ footer a:hover {
   text-align: center;
   font-size: 0.9em;
   padding: 30px;
-  width: 50%;
   margin: 0 auto;
+  width: 800px;
 }
 @media (max-width: 700px) {
   .footer_index {
@@ -898,7 +959,7 @@ footer a:hover {
 .direita a.voltar {
   transform: scale(-1);
   position: relative;
-  top: -2px;
+  top: 1px;
   left: -20px;
 }
 
