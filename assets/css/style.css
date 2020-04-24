@@ -685,6 +685,10 @@ img {
   width: 100%;
 }
 
+figcaption {
+  padding-bottom: 2em;
+}
+
 .tabela {
   padding: 30px 0;
   width: 100%;
@@ -803,6 +807,16 @@ img {
 .ficha .ssan {
   width: 300px;
   padding-bottom: 20px;
+}
+.ficha .marcasgerais {
+  width: 500px;
+  padding: 30px 0;
+  background-blend-mode: multiply;
+}
+@media (max-width: 425px) {
+  .ficha .marcasgerais {
+    width: 100%;
+  }
 }
 
 .isbn {

@@ -39,6 +39,10 @@ img {
 	width: 100%;
 }
 
+figcaption {
+	padding-bottom: 2em;
+}
+
 // TABELA 
 
 .tabela {
@@ -168,6 +172,16 @@ img {
 	.ssan {
 		width: 300px;
 		padding-bottom: 20px;
+	}
+
+	.marcasgerais {
+		width: 500px;
+		padding: 30px 0;
+		background-blend-mode: multiply;
+		
+		@media (max-width: $celular) {
+		width: 100%;
+	}
 	}
 }
 
