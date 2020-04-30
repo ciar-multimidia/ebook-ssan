@@ -1,0 +1,108 @@
+@media print {
+
+//HEADER_INDEX
+
+.botoes_index {
+	display: none;
+}
+
+.tituloindex {
+	margin-top: 8cm;
+}
+
+#titulos{
+	h2 {
+		margin-bottom: 8cm;
+	}
+}
+
+#linha {
+	border: none;
+}
+
+.ficha {
+	.ssan {
+	width: 5cm;
+	margin: 0;
+	padding-bottom: 20px;
+	}
+
+	.ciarufg {
+		width: 3cm;
+		margin-top: 1cm;
+	}
+}
+
+#link {
+		display: none;
+	}
+
+	
+//HEADER_CONTEUDO
+
+.header_conteudo {
+	display: none;
+}
+
+//PADRÃO 
+
+@page {
+	margin: 1.5cm 1cm 1.5cm 1cm;
+}
+
+h1, h2, h3, h4 {
+	color: $verde;
+	margin: 0;
+	padding: 35px 0 10px 0;
+}
+
+h1 {
+	font-size: 1.2em;
+	padding: 0 0 20px 0;
+
+}
+
+h2 {
+	font-size: 1em;
+}
+
+p {
+	margin: 0;
+	font-size: 0.8em;
+	padding-bottom: 20px;
+}
+
+
+caption, ul, ol {
+	font-size: 0.8em;	
+}
+
+img {
+	max-width: 16cm;
+	vertical-align: left;
+}
+
+figcaption {
+	font-size: 0.7em;
+}
+
+//FOOTER
+
+.footer_index {
+	display: none;
+}
+
+.footer_conteudo {
+	display: none;
+}
+
+
+
+
+
+
+
+
+
+
+}

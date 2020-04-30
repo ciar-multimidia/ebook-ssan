@@ -43,6 +43,34 @@ figcaption {
 	padding-bottom: 2em;
 }
 
+//PRINT
+
+.print {
+	width: 48px;
+	float: right;
+	margin-top: 60px;
+	pointer: hover;
+	@media (max-width: $tablet) {
+		display: none;
+		}
+	@media (max-width: $celular) {
+		display: none;
+		}
+}
+
+.printficha {
+	width: 48px;
+	float: right;
+	margin-top: 190px;
+	pointer: hover;
+	@media (max-width: $tablet) {
+		display: none;
+		}
+	@media (max-width: $celular) {
+		display: none;
+		}
+}
+
 // TABELA 
 
 .tabela {
@@ -137,7 +165,11 @@ figcaption {
 
 #linha {
 	border-top: 2px solid $verde;
+	p:first-child {
+		padding-top: 20px;
+	}
 }
+
 
 .ficha {
 
@@ -155,7 +187,7 @@ figcaption {
 	}
 
 	.ciarufg {
-		margin: 50px 0;
+		margin-top: 50px;
 		width: 240px;
 	}
 
