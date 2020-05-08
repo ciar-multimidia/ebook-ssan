@@ -235,10 +235,11 @@ figcaption {
 }
 
 #link {
-	width: 37%;
+	text-align: center;
+	width: 20%;
 	font-weight: normal;
 	display: block;
-	margin-top: 50px;
+	margin: 50px 0 50px 0;
 	background-color: $verde;
 	color: $bg;
 	font-size: 1.2em;
