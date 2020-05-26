@@ -219,8 +219,9 @@ figcaption {
 
 .isbn {
 	border: 1px solid $marrom;
-	margin-top: 40px;
+	margin: 15px 0 15px 0;
 	padding: 30px;
+	width: 70%;
 	p {
 		font-size: 0.9em;
 	}
@@ -231,6 +232,10 @@ figcaption {
 	.info {
 		float: right;
 		width: calc(100% - 80px)
+	}
+
+	.info p {
+		padding: 0;
 	}
 }
 
